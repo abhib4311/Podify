@@ -22,7 +22,7 @@ app.use(cors(corsConfig));
 
 
 const port = process.env.PORT || 5000;
-const MONGO_URL = process.env.MONGO_URL || "mongodb+srv://abhisheksingh4311:nagpur420@cluster0.wawd34x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const MONGO_URL = process.env.MONGO_URL ;
 const connect = () => {
     mongoose.set('strictQuery', true);
     mongoose.connect(MONGO_URL).then(() => {
